@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tragic Voyage of the Titanic</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; 
+            background-color: #BBAB8B;
+        }
+
+        header {
+            position: fixed; 
+            width: 100%;
+            z-index: 1000; 
+            background: rgba(51, 51, 51, 0.8);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .chapter {
+            position: relative;
+            height: 100vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        h1.chapter-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        h3.section-title {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #star-rating {
+            margin-top: 20px;
+        }
+
+        .star {
+            font-size: 2em; 
+            color: gray;
+            cursor: pointer; 
+            transition: color 0.3s ease;
+        }
+
+        .star:hover,
+        .star.selected {
+            color: gold; 
+        }
+
+        .rating-container {
+            margin-top: 2rem;
+            text-align: center;
+            background: rgba(74, 70, 55, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .rating-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #F5F1E6;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .stars {
+            font-size: 1.25rem;
+            cursor: pointer;
+            padding: 1rem;
+        }
+
+        .star {
+            color: #ccc;
+            transition: color 0.3s;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .star.selected {
+            color: #ffd700;
+        }
+
+        h1.story-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="chapter" style="background-image: url('titanic/image1.jpg');">
+        <div class="content">
+            <h1>The Tragic Voyage of the Titanic</h1>
+            <h2>🔹 The Journey Begins</h2>
+            <p><strong>1. The Birth of a Legend (1909–1912)</strong><br>
+            The Titanic, a marvel of engineering, was built in Belfast, Ireland, by the White Star Line. It was designed to be the largest and most luxurious ship of its time, with cutting-edge safety features.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image2.jpg');">
+        <div class="content">
+            <h2>2. The "Unsinkable" Ship</h2>
+            <p>The Titanic was widely advertised as "practically unsinkable," due to its watertight compartments. People believed it to be the safest ship ever built.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image3.jpg');">
+        <div class="content">
+            <h2>3. Boarding the Titanic (April 10, 1912)</h2>
+            <p>On the morning of April 10, 1912, thousands gathered to witness the Titanic's departure. 2,224 people boarded, including some of the world's wealthiest individuals and poor immigrants seeking a new life in America.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image4.jpg');">
+        <div class="content">
+            <h2>4. Setting Sail</h2>
+            <p>The Titanic set sail at noon, making stops in Cherbourg, France, and Queenstown, Ireland, before heading into the open Atlantic.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image5.jpg');">
+        <div class="content">
+            <h2>5. Life Onboard (April 11–14, 1912)</h2>
+            <p>First-class passengers enjoyed gourmet meals, heated swimming pools, and luxurious suites, while third-class passengers lived in crowded yet comfortable quarters.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image6.jpg');">
+        <div class="content">
+            <h1>🔹 Warnings and the Iceberg</h1>
+            <h2>6. Ice Warnings Begin (April 14, 1912)</h2>
+            <p>Several ships, including the Californian and Mesaba, sent iceberg warnings, but the messages were not taken seriously.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image7.jpg');">
+        <div class="content">
+            <h2>7. A Cold, Moonless Night</h2>
+            <p></p>The temperature dropped below freezing, and the sea was eerily calm—ideal conditions for spotting icebergs, yet also making them harder to see due to a lack of waves.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image8.jpg');">
+        <div class="content">
+            <h2>8. The Iceberg Appears (April 14, 11:40 PM)</h2>
+            <p>Frederick Fleet, the lookout, suddenly saw a giant iceberg ahead. He rang the warning bell and shouted: "ICEBERG, RIGHT AHEAD!"</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image9.jpg');">
+        <div class="content">
+            <h2>9. Desperate Maneuvers</h2>
+            <p>The ship tried to turn, but it was too big to maneuver quickly. The iceberg scraped along its right side, tearing a 300-foot gash below the waterline.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image10.jpg');">
+        <div class="content">
+            <h2>10. The Fatal Damage</h2>
+            <p>Water poured into five of the ship's compartments—more than the Titanic could handle. The ship's fate was sealed.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image11.jpg');">
+        <div class="content">
+            <h1>🔹 Realization and Panic</h1>
+            <h2>11. Captain Smith Assesses the Situation</h2>
+            <p>The ship's designer, Thomas Andrews, inspected the damage and told Captain Smith: "She will sink in less than two hours."</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image12.jpg');">
+        <div class="content">
+            <h2>12. First-Class Passengers Unconcerned</h2>
+            <p>Many first-class passengers dismissed the warnings, assuming the ship was still safe. Some even laughed at the idea of sinking.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image13.jpg');">
+        <div class="content">
+            <h2>13. The First Lifeboats Are Launched</h2>
+            <p>At 12:20 AM, Captain Smith ordered the crew to begin evacuations, but people were hesitant to board lifeboats, thinking they were safer on the ship.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image14.jpg');">
+        <div class="content">
+            <h2>14. Third-Class Passengers Struggle</h2>
+            <p>Many third-class passengers were trapped behind locked gates, struggling to find a way to the upper decks.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image15.jpg');">
+        <div class="content">
+            <h2>15. The Orchestra Plays</h2>
+            <p>The Titanic's orchestra played music to keep passengers calm, even as the ship tilted forward.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image16.jpg');">
+        <div class="content">
+            <h1>🔹 The Final Moments</h1>
+            <h2>16. Full Panic Breaks Out</h2>
+            <p>As water reached the upper decks, people pushed and shoved to get onto lifeboats. Gunshots were fired to control the chaos.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image17.jpg');">
+        <div class="content">
+            <h2>17. The Titanic's Last Lights (2:10 AM)</h2>
+            <p>The ship's electricity failed, and everything went dark. The stern rose into the air, while passengers held on desperately.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image18.jpg');">
+        <div class="content">
+            <h2>18. The Titanic Breaks in Half (2:18 AM)</h2>
+            <p>The massive strain on the ship's structure caused it to snap in half. The bow sank first, followed by the stern minutes later.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image19.jpg');">
+        <div class="content">
+            <h2>19. Hundreds Struggle in the Freezing Water</h2>
+            <p>Over 1,500 people were thrown into the freezing water. Most died within minutes due to hypothermia.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image20.jpg');">
+        <div class="content">
+            <h1 class="chapter-title">🔹 The Aftermath</h1>
+            <h3 class="section-title">20. The Carpathia Arrives</h3>
+            <p> At 4:00 AM, the RMS Carpathia arrived and rescued the 705 survivors who had escaped in lifeboats.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image21.jpg');">
+        <div class="content">
+            <h2>21. The World Reacts</h2>
+            <p>The world was shocked by the tragedy. Many questioned why there were not enough lifeboats.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image22.jpg');">
+        <div class="content">
+            <h2>22. Investigations Begin</h2>
+            <p>Governments launched investigations, leading to new maritime safety laws, including enough lifeboats for all passengers.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image23.jpg');">
+        <div class="content">
+            <h2>23. The Titanic's Wreck Is Discovered (1985)</h2>
+            <p>In 1985, Dr. Robert Ballard found the Titanic's remains 12,500 feet below the sea, offering the world its first glimpse of the lost ship.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image24.jpg');">
+        <div class="content">
+            <h2>24. Titanic in Pop Culture</h2>
+            <p>The story of the Titanic became legendary, inspiring books, films, and documentaries, keeping its memory alive.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('titanic/image25.jpg');">
+        <div class="content">
+            <h3 class="section-title">25. A Legacy Remembered</h3>
+            <p>The Titanic remains a symbol of human ambition and tragedy, reminding us of the power of nature and the cost of hubris.</p>
+
+            <div id="star-rating">
+                <h2>Rate this Story:</h2>
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Storytelling Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = star.getAttribute('data-value');
+                stars.forEach(s => s.classList.remove('selected'));
+                for (let i = 0; i < rating; i++) {
+                    stars[i].classList.add('selected');
+                }
+                alert(`Thank you for rating this story ${rating} stars!`);
+            });
+        });
+    </script>
+
+</body>
+</html>

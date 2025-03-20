@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moon Landing - A Journey to the Unknown</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(51, 51, 51, 0.8);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .chapter {
+            position: relative;
+            height: 100vh; 
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        h1.chapter-title {
+            font-family: 'Playfair Display', serif; 
+            font-size: 3em; 
+            margin-bottom: 20px;
+        }
+
+        h3.section-title {
+            font-family: 'Arial', sans-serif; 
+            font-size: 1.8em; 
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .rating-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .rating-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .stars {
+            font-size: 1.25rem; 
+            cursor: pointer;
+            padding: 1rem;
+        }
+
+        .star {
+            color: #ccc;
+            transition: color 0.3s;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .star.selected {
+            color: #ffd700;
+        }
+
+        h1.story-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage1.jpg');">
+        <div class="content">
+            <h1 class="story-title">The Moon Landing (1969) – A Journey to the Unknown</h1>
+            <h1 class="chapter-title">🔹 The Journey Begins</h1>
+            <h3 class="section-title">1. The Space Race & Apollo 11</h3>
+            <p>The Cold War led to a fierce competition between the U.S. and the Soviet Union. After President John F. Kennedy's speech, NASA set out to achieve the impossible—land a man on the Moon.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage2.jpg');">
+        <div class="content">
+            <h3 class="section-title">2. Saturn V: The Most Powerful Rocket</h3>
+            <p>NASA built the Saturn V, a 363-foot rocket designed to carry astronauts beyond Earth. The mission was led by Neil Armstrong, Buzz Aldrin, and Michael Collins.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage3.jpg');">
+        <div class="content">
+            <h3 class="section-title">3. Liftoff – July 16, 1969</h3>
+            <p>On July 16, 1969, at 9:32 AM, Apollo 11 blasted off from Kennedy Space Center, watched by millions around the world.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage4.jpg');">
+        <div class="content">
+            <h1 class="chapter-title">🔹 Journey to the Moon</h1>
+            <h3 class="section-title">4. Three Days in Space</h3>
+            <p>The crew orbited Earth once before setting course for the Moon, traveling 240,000 miles in three days, experiencing zero gravity.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage5.jpg');">
+        <div class="content">
+            <h3 class="section-title">5. Entering Lunar Orbit</h3>
+            <p>On July 19, Apollo 11 entered lunar orbit. Armstrong and Aldrin moved into the Lunar Module (Eagle), while Collins remained in the Command Module.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage6.jpg');">
+        <div class="content">
+            <h3 class="section-title">6. The Dangerous Descent</h3>
+            <p>As they descended, computer alarms blared, and Armstrong had to manually pilot the Eagle, avoiding boulders and craters.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage7.jpg');">
+        <div class="content">
+            <h1 class="chapter-title">🔹 The Moon Landing</h1>
+            <h3 class="section-title">7. "The Eagle Has Landed"</h3>
+            <p>At 4:17 PM EDT, Armstrong radioed: "Houston, Tranquility Base here. The Eagle has landed." They had done it.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage8.jpg');">
+        <div class="content">
+            <h3 class="section-title">8. First Steps on the Moon</h3>
+            <p>Hours later, Armstrong descended the ladder and took the first human step on the Moon, saying: "That's one small step for man, one giant leap for mankind."</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage9.jpg');">
+        <div class="content">
+            <h3 class="section-title">9. Buzz Aldrin Joins & The Moon Walk</h3>
+            <p>Aldrin soon joined, describing the Moon as a "magnificent desolation." Together, they planted the American flag and conducted experiments.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage10.jpg');">
+        <div class="content">
+            <h1 class="chapter-title">🔹Returning to Earth</h1>
+            <h3 class="section-title">10. Leaving the Moon</h3>
+            <p>After 21 hours on the Moon, they blasted off, leaving the lower half of Eagle behind.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage11.jpg');">
+        <div class="content">
+            <h3 class="section-title">11. Reuniting with Michael Collins</h3>
+            <p>In orbit, Collins waited alone, ensuring they could return safely. The docking was successful, and they began their journey home.</p>
+        </div>
+    </div>
+
+    <div class="chapter" style="background-image: url('moon-landing/spaceimage12.jpg');">
+        <div class="content">
+            <h3 class="section-title">🔹 12. Splashdown & A Hero's Welcome</h3>
+            <p>On July 24, 1969, Apollo 11 splashed down in the Pacific Ocean, welcomed as heroes, marking one of humanity's greatest achievements.</p>
+
+            <div class="rating-container">
+                <h2 class="rating-title">Rate this Story</h2>
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Storytelling Website. All rights reserved.</p>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.star');
+            
+            stars.forEach((star, index) => {
+                star.addEventListener('click', () => {
+                    stars.forEach(s => s.classList.remove('selected'));
+                    for (let i = 0; i <= index; i++) {
+                        stars[i].classList.add('selected');
+                    }
+                    alert(`Thank you for rating this story ${index + 1} stars!`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
